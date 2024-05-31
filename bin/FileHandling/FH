@@ -1,0 +1,29 @@
+FileHandling : it is something in which we use to read or write files
+
+
+IO : input and output
+
+OutputStream : write something in the file
+InputStream : what we read something from the file
+
+
+Student Class
+rno, name, std
+
+
+During writing , object is converted into stream
+
+Stream  is an object, which is in the form of binary text
+
+
+Serialisation : converting a class object into stream(write)
+Deserialisation : converting stream to object.(read)
+
+
+
+
+Employee Class Object: id, name, salary, designation
+
+Write (text1)
+Read (from text1)
+write (reading from text1.txt)

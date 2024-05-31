@@ -1,0 +1,72 @@
+Exceptional Handling : 
+
+
+to handle runtime errors so that normal flow of application can be maintained
+
+
+
+
+statement1;
+statement2;
+statement3;     //exception occurs
+.....
+statement10;
+
+
+from statement3-statement10  will not execute 
+
+
+Two Type of Exception : 
+
+1> Checked Exception / Compiletime  : directly inherit throwable class : IOException , SQL, ClassNotFound	
+2> Unchecked Exception   / Runtime    : inherits Exception class  : Arithmetic, NullPointer, NumberFormat,ArrayIndexOutOfBound
+
+							     Throwable
+									|
+			---------------------------------------------------------
+			|														|
+	    -------------------------------------------------------------
+	    |															|
+	    |														Exception                                                     
+		|-IOException                                         	|
+		|-SQL													|
+		|-ClassNotFound											|-Arithmetic
+																|-NullPointer
+																|-NumberFormat
+																|-ArrayIndexOutOfBound
+																
+																
+	try{															
+	statement;  //will cause exception
+	}catch(Exception)
+	{
+	}
+	
+	
+	
+	EXCEPTIONAL OVERRIDING :
+	
+	1> superclass method doesnot throw exception
+		subclass overriden method cannot declare checked exception,
+		but can declare unchecked exception
+		
+	2> superclass method  throw exception
+		subclass overriden method can declare same exception,
+		can declare child exception, but not the parent exception
+		
+		
+	parent -> Exception 
+	Child -> Exception class/ any unchecked Exception/ any checked Exceptions
+	
+	Parent -> one unchecked exceptions
+	child -> any unchecked exceptions
+	
+	Parent -> one Checked Exception
+	Child -> same checked Exception/ any Unchecked Exceptions
+	
+	
+	
+	
+	Voters are eligible  18 years and above
+	if a person is below 18, then they are not eligible and throw an exception
+	

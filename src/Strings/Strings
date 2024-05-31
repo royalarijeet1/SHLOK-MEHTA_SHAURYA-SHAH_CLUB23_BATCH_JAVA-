@@ -1,0 +1,61 @@
+String is an object which represents sequence of char values
+
+char[] ch={'S','t','r','i','n','g'};
+
+
+same as
+
+String s="String";
+
+
+1> By String Literal
+2> New Keyword
+
+
+String s1="welcome"
+String s2="welcome"
+String s3="Java"
+
+
+
+
+New Keyword
+
+
+String s4 =new String("Welcome"); ---heap area one memory  
+
+String  s5=new String("Welcome");  ---heap area another  memory 
+
+Immutable : it will not change the original string until it is stored in a new variable
+
+StringBuffer : Mutable
+String : Immutable
+
+
+StringBuilder  :NON-Synchronised (not thread safe)  : one function can accept mutiple threats simultaneously
+StringBuffer   : SYNCHRONISED  (thread safe) : one function can accept one threat only
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
